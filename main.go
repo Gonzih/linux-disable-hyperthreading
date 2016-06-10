@@ -64,13 +64,6 @@ func main() {
 			continue
 		}
 
-		if len(cores) <= indexCounter {
-			cores[indexCounter] = CoreInfo{
-				coreId:      0,
-				processorId: 0,
-			}
-		}
-
 		value, _ := strconv.Atoi(strings.Trim(tokens[1], trimCutPoints))
 
 		if key == "processor" {
